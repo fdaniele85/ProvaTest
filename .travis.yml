@@ -4,7 +4,7 @@ compiler:
   - clang
 # trusty (14.04) is now used instead of precise (12.04)
 sudo: required
-dist: trusty
+dist: xenial
 before_script:
   - mkdir build
   - cd build
