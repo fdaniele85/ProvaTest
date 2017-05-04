@@ -283,7 +283,7 @@
 <pathentry kind="mac" name="__GLIBCXX_BITSIZE_INT_N_0" path="" value="128"/>
 <pathentry kind="mac" name="__GNUC_GNU_INLINE__" path="" value="1"/>
 <pathentry kind="mac" name="_GNU_SOURCE" path="" value="1"/>
-<pathentry include="/home/daniele/workspace/ProvaTest/src" kind="inc" path="" system="true"/>
+<pathentry include="/tmp/ProvaTest/src" kind="inc" path="" system="true"/>
 <pathentry include="/usr/lib/gcc/x86_64-linux-gnu/5/include" kind="inc" path="" system="true"/>
 <pathentry include="/usr/local/include" kind="inc" path="" system="true"/>
 <pathentry include="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" kind="inc" path="" system="true"/>
@@ -346,14 +346,42 @@
 </target>
 <target name="Build" path="[Targets]/[lib] Sqr" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>/usr/bin/make</buildCommand>
-<buildArguments>-C "/home/daniele/workspace/ProvaTest" -j4</buildArguments>
+<buildArguments>-C "/tmp/ProvaTest" -j4</buildArguments>
 <buildTarget>Sqr</buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
 </target>
 <target name="Clean" path="[Targets]/[lib] Sqr" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>/usr/bin/cmake</buildCommand>
-<buildArguments>-E chdir "/home/daniele/workspace/ProvaTest/src" "/usr/bin/cmake" -P "CMakeFiles/Sqr.dir/cmake_clean.cmake"</buildArguments>
+<buildArguments>-E chdir "/tmp/ProvaTest/src" "/usr/bin/cmake" -P "CMakeFiles/Sqr.dir/cmake_clean.cmake"</buildArguments>
+<buildTarget></buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="[lib] Bla" path="src" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments>-j4</buildArguments>
+<buildTarget>Bla</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="[lib] Bla/fast" path="src" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments>-j4</buildArguments>
+<buildTarget>Bla/fast</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="Build" path="[Targets]/[lib] Bla" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments>-C "/tmp/ProvaTest" -j4</buildArguments>
+<buildTarget>Bla</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="Clean" path="[Targets]/[lib] Bla" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/cmake</buildCommand>
+<buildArguments>-E chdir "/tmp/ProvaTest/src" "/usr/bin/cmake" -P "CMakeFiles/Bla.dir/cmake_clean.cmake"</buildArguments>
 <buildTarget></buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
@@ -374,14 +402,14 @@
 </target>
 <target name="Build" path="[Targets]/[lib] Plus" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>/usr/bin/make</buildCommand>
-<buildArguments>-C "/home/daniele/workspace/ProvaTest" -j4</buildArguments>
+<buildArguments>-C "/tmp/ProvaTest" -j4</buildArguments>
 <buildTarget>Plus</buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
 </target>
 <target name="Clean" path="[Targets]/[lib] Plus" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>/usr/bin/cmake</buildCommand>
-<buildArguments>-E chdir "/home/daniele/workspace/ProvaTest/src" "/usr/bin/cmake" -P "CMakeFiles/Plus.dir/cmake_clean.cmake"</buildArguments>
+<buildArguments>-E chdir "/tmp/ProvaTest/src" "/usr/bin/cmake" -P "CMakeFiles/Plus.dir/cmake_clean.cmake"</buildArguments>
 <buildTarget></buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
@@ -402,14 +430,14 @@
 </target>
 <target name="Build" path="[Targets]/[exe] demo" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>/usr/bin/make</buildCommand>
-<buildArguments>-C "/home/daniele/workspace/ProvaTest" -j4</buildArguments>
+<buildArguments>-C "/tmp/ProvaTest" -j4</buildArguments>
 <buildTarget>demo</buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
 </target>
 <target name="Clean" path="[Targets]/[exe] demo" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>/usr/bin/cmake</buildCommand>
-<buildArguments>-E chdir "/home/daniele/workspace/ProvaTest/src" "/usr/bin/cmake" -P "CMakeFiles/demo.dir/cmake_clean.cmake"</buildArguments>
+<buildArguments>-E chdir "/tmp/ProvaTest/src" "/usr/bin/cmake" -P "CMakeFiles/demo.dir/cmake_clean.cmake"</buildArguments>
 <buildTarget></buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
@@ -444,14 +472,14 @@
 </target>
 <target name="Build" path="[Targets]/[exe] Test" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>/usr/bin/make</buildCommand>
-<buildArguments>-C "/home/daniele/workspace/ProvaTest" -j4</buildArguments>
+<buildArguments>-C "/tmp/ProvaTest" -j4</buildArguments>
 <buildTarget>Test</buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
 </target>
 <target name="Clean" path="[Targets]/[exe] Test" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>/usr/bin/cmake</buildCommand>
-<buildArguments>-E chdir "/home/daniele/workspace/ProvaTest/test" "/usr/bin/cmake" -P "CMakeFiles/Test.dir/cmake_clean.cmake"</buildArguments>
+<buildArguments>-E chdir "/tmp/ProvaTest/test" "/usr/bin/cmake" -P "CMakeFiles/Test.dir/cmake_clean.cmake"</buildArguments>
 <buildTarget></buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>

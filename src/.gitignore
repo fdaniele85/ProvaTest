@@ -1,6 +1,5 @@
 /CMakeFiles/
 /demo
-/libPlus.a
-/libSqr.a
+/lib*
 /cmake_install.cmake
 /Makefile

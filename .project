@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>TEST-Debug@ProvaTest</name>
+	<name>TEST-Release@ProvaTest</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -47,7 +47,7 @@
 				</dictionary>
 				<dictionary>
 					<key>org.eclipse.cdt.make.core.buildLocation</key>
-					<value>/home/daniele/workspace/ProvaTest</value>
+					<value>/tmp/ProvaTest</value>
 				</dictionary>
 				<dictionary>
 					<key>org.eclipse.cdt.make.core.useDefaultBuildCmd</key>
@@ -83,7 +83,7 @@
 				</dictionary>
 				<dictionary>
 					<key>org.eclipse.cdt.make.core.build.location</key>
-					<value>/home/daniele/workspace/ProvaTest</value>
+					<value>/tmp/ProvaTest</value>
 				</dictionary>
 				<dictionary>
 					<key>org.eclipse.cdt.make.core.autoBuildTarget</key>
@@ -136,7 +136,7 @@
 		<link>
 			<name>[Targets]/[lib] Sqr/Source Files/sqr.cpp</name>
 			<type>1</type>
-			<location>/home/daniele/workspace/ProvaTest/src/sqr.cpp</location>
+			<location>/tmp/ProvaTest/src/sqr.cpp</location>
 		</link>
 		<link>
 			<name>[Targets]/[lib] Sqr/Header Files</name>
@@ -146,7 +146,7 @@
 		<link>
 			<name>[Targets]/[lib] Sqr/Header Files/sqr.h</name>
 			<type>1</type>
-			<location>/home/daniele/workspace/ProvaTest/src/sqr.h</location>
+			<location>/tmp/ProvaTest/src/sqr.h</location>
 		</link>
 		<link>
 			<name>[Targets]/[lib] Sqr/CMake Rules</name>
@@ -160,6 +160,51 @@
 		</link>
 		<link>
 			<name>[Targets]/[lib] Sqr/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] Bla</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] Bla/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] Bla/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] Bla/Source Files/blabla.cpp</name>
+			<type>1</type>
+			<location>/tmp/ProvaTest/src/blabla.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] Bla/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] Bla/Header Files/blabla.h</name>
+			<type>1</type>
+			<location>/tmp/ProvaTest/src/blabla.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] Bla/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] Bla/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] Bla/Object Files</name>
 			<type>2</type>
 			<locationURI>virtual:/virtual</locationURI>
 		</link>
@@ -181,7 +226,7 @@
 		<link>
 			<name>[Targets]/[lib] Plus/Source Files/plus.cpp</name>
 			<type>1</type>
-			<location>/home/daniele/workspace/ProvaTest/src/plus.cpp</location>
+			<location>/tmp/ProvaTest/src/plus.cpp</location>
 		</link>
 		<link>
 			<name>[Targets]/[lib] Plus/Header Files</name>
@@ -191,7 +236,7 @@
 		<link>
 			<name>[Targets]/[lib] Plus/Header Files/plus.h</name>
 			<type>1</type>
-			<location>/home/daniele/workspace/ProvaTest/src/plus.h</location>
+			<location>/tmp/ProvaTest/src/plus.h</location>
 		</link>
 		<link>
 			<name>[Targets]/[lib] Plus/CMake Rules</name>
@@ -226,7 +271,7 @@
 		<link>
 			<name>[Targets]/[exe] demo/Source Files/main.cpp</name>
 			<type>1</type>
-			<location>/home/daniele/workspace/ProvaTest/src/main.cpp</location>
+			<location>/tmp/ProvaTest/src/main.cpp</location>
 		</link>
 		<link>
 			<name>[Targets]/[exe] demo/Header Files</name>
@@ -266,7 +311,7 @@
 		<link>
 			<name>[Targets]/[exe] Test/Source Files/test.cpp</name>
 			<type>1</type>
-			<location>/home/daniele/workspace/ProvaTest/test/test.cpp</location>
+			<location>/tmp/ProvaTest/test/test.cpp</location>
 		</link>
 		<link>
 			<name>[Targets]/[exe] Test/Header Files</name>
