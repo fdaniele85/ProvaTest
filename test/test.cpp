@@ -1,29 +1,10 @@
-#define BOOST_TEST_MODULE SqrTests
+#define BOOST_TEST_MODULE FiniteSetTest
 #include <boost/test/unit_test.hpp>
 
-#include "sqr.h"
-#include "plus.h"
-#include "blabla.h"
+#include "FiniteSet.hpp"
 
 BOOST_AUTO_TEST_CASE(NowPassTest)
 {
-  BOOST_CHECK_EQUAL(4, sqr(2));
-}
-
-BOOST_AUTO_TEST_CASE(PassTest)
-{
-  BOOST_CHECK_EQUAL(4, sqr(2));
-}
-
-BOOST_AUTO_TEST_CASE(PlusTest)
-{
-	BOOST_CHECK_EQUAL(5, plus(2,3));
-}
-
-BOOST_AUTO_TEST_CASE(BlablaTest) {
-	blabla b(15);
-
-
-	BOOST_CHECK_EQUAL(15, b.getX());
-
+  dferone::FiniteSet fs(10);
+  BOOST_CHECK_EQUAL(fs.contains(3), false);
 }

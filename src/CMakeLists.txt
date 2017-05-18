@@ -1,5 +1,0 @@
-add_library (Sqr sqr.cpp sqr.h)
-add_library (Plus plus.cpp plus.h)
-add_library (Bla blabla.cpp blabla.h)
-add_executable (demo main.cpp)
-target_link_libraries (demo Sqr Plus Bla)
