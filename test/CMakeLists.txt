@@ -1,12 +1,18 @@
-find_package (Boost COMPONENTS system filesystem unit_test_framework REQUIRED)
-include_directories (${TEST_SOURCE_DIR}/src
-                     ${Boost_INCLUDE_DIRS}
-                     )
-add_definitions (-DBOOST_TEST_DYN_LINK)
-add_executable (Test test.cpp)
-target_link_libraries (Test
-                       ${Boost_FILESYSTEM_LIBRARY}
-                       ${Boost_SYSTEM_LIBRARY}
-                       ${Boost_UNIT_TEST_FRAMEWORK_LIBRARY}
-                       )
-add_test (NAME MyTest COMMAND Test)
+Include(FetchContent)
+
+FetchContent_Declare(
+        Catch2
+        GIT_REPOSITORY https://github.com/catchorg/Catch2.git
+        GIT_TAG        v3.0.0-preview3
+)
+
+FetchContent_MakeAvailable(Catch2)
+
+add_executable(tests test.cpp)
+target_include_directories(tests PRIVATE ${PROJECT_SOURCE_DIR}/src)
+target_link_libraries(tests PRIVATE Catch2::Catch2WithMain)
+
+list(APPEND CMAKE_MODULE_PATH ${catch2_SOURCE_DIR}/extras)
+include(CTest)
+include(Catch)
+catch_discover_tests(tests)
